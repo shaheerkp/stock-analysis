@@ -1,0 +1,10 @@
+services:
+  - type: cron
+    name: stock-analysis-cron
+    env: node
+    schedule: "0 3 * * 1-5" # 8:30 AM IST weekdays
+    buildCommand: npm install
+    startCommand: npm run india
+    envVars:
+      - key: NODE_VERSION
+        value: 18
