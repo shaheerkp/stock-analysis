@@ -3,7 +3,7 @@ name: Daily Stock Analysis
 on:
   schedule:
     # Runs at 8:30 AM IST (3:00 AM UTC) every weekday
-    - cron: '0 3 * * 1-5'
+    - cron: '30 6 * * 1-5'
   workflow_dispatch: # Allows manual trigger
 
 jobs:
